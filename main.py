@@ -14,12 +14,11 @@
 # one of the ChromeBooks at the Eclipse Che booth.
 
 for i in range(1, 101):
-    str = ""
+    num = "%s" % i;
 
     if (i % 3 == 0):
-        str += "Fizz"
+        num = "Fizz"
     if (i % 5 == 0):
-        str += "Buzz"
-    if (str == ""):
-        str = "%d" % i
-    print("%s" % str)
+        num = "Buzz"
+
+    print (f"{num}");
